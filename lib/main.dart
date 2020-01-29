@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -94,26 +94,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.tealAccent,
               ),
             ),
-            Container(
-              alignment: Alignment.center,
-              color: Colors.white,
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal,
-                  ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '1-212-555-1212',
-                    style: GoogleFonts.sourceSansPro(fontSize: 14.0),
-                  ),
-                ],
-              ),
-              padding: EdgeInsets.all(16.0),
+            Card(
               margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              color: Colors.white,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '1-212-555-1212',
+                  style: GoogleFonts.sourceSansPro(fontSize: 14.0),
+                ),
+              ),
             ),
             Container(
               alignment: Alignment.center,
