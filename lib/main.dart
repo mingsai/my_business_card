@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -49,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
-              padding: EdgeInsets.all(8),
+              padding: EdgeInsets.all(16),
               width: 200,
               height: 200,
               child: CircleAvatar(
@@ -61,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'Tommie N. Carter, Jr. MBA',
               style: GoogleFonts.lilyScriptOne(
-                fontSize: 30,
+                fontSize: 14,
 //                fontWeight: FontWeight.bold,
 //                fontStyle: FontStyle.n,
                 color: Colors.white,
@@ -73,28 +74,30 @@ class _MyHomePageState extends State<MyHomePage> {
               style: GoogleFonts.aldrich(
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.w400,
-                fontSize: 25,
+                fontSize: 12,
                 letterSpacing: 2.0,
                 color: Colors.tealAccent,
               ),
             ),
-            Container(
-              alignment: Alignment.center,
-              color: Colors.white,
-              child: Row(
-                children: <Widget>[
-                  Icon(Icons.phone),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '1-212-555-1212',
-                    style: GoogleFonts.sourceSansPro(fontSize: 20.0),
-                  ),
-                ],
+            IntrinsicWidth(
+              child: Container(
+                alignment: Alignment.center,
+                color: Colors.white,
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.phone),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '1-212-555-1212',
+                      style: GoogleFonts.sourceSansPro(fontSize: 14.0),
+                    ),
+                  ],
+                ),
+                padding: EdgeInsets.all(16.0),
+                margin: EdgeInsets.all(16),
               ),
-              padding: EdgeInsets.all(16.0),
-              margin: EdgeInsets.all(8),
             ),
             Container(
               alignment: Alignment.center,
@@ -107,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(width: 10.0),
                   Text(
                     'not.myemail@email.com',
-                    style: GoogleFonts.sourceSansPro(fontSize: 20.0),
+                    style: GoogleFonts.sourceSansPro(fontSize: 14.0),
                   ),
                 ],
               ),
@@ -116,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         ),
-        padding: const EdgeInsets.all(16.0),
+//        padding: const EdgeInsets.all(8.0),
         alignment: Alignment.center,
       ),
     );
