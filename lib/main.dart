@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
               width: 200,
               height: 200,
               child: CircleAvatar(
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'Tommie N. Carter, Jr. MBA',
               style: GoogleFonts.lilyScriptOne(
-                fontSize: 14,
+                fontSize: 16,
 //                fontWeight: FontWeight.bold,
 //                fontStyle: FontStyle.n,
                 color: Colors.white,
@@ -74,29 +74,9 @@ class _MyHomePageState extends State<MyHomePage> {
               style: GoogleFonts.aldrich(
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.w400,
-                fontSize: 12,
+                fontSize: 15,
                 letterSpacing: 2.0,
                 color: Colors.tealAccent,
-              ),
-            ),
-            IntrinsicWidth(
-              child: Container(
-                alignment: Alignment.center,
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.phone),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '1-212-555-1212',
-                      style: GoogleFonts.sourceSansPro(fontSize: 14.0),
-                    ),
-                  ],
-                ),
-                padding: EdgeInsets.all(16.0),
-                margin: EdgeInsets.all(16),
               ),
             ),
             Container(
@@ -105,7 +85,29 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 children: <Widget>[
                   Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    '1-212-555-1212',
+                    style: GoogleFonts.sourceSansPro(fontSize: 14.0),
+                  ),
+                ],
+              ),
+              padding: EdgeInsets.all(16.0),
+              margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            ),
+            Container(
+              alignment: Alignment.center,
+              color: Colors.white,
+              child: Row(
+                children: <Widget>[
+                  Icon(
                     Icons.email,
+                    color: Colors.teal,
                   ),
                   SizedBox(width: 10.0),
                   Text(
@@ -115,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
               padding: EdgeInsets.all(16.0),
-              margin: EdgeInsets.all(8),
+              margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             )
           ],
         ),
