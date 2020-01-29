@@ -1,10 +1,25 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(new MyApp());
+  _setTargetPlatformForDesktop();
+  runApp(MyApp());
 }
+
+void _setTargetPlatformForDesktop() {
+  // No need to handle macOS, as it has now been added to TargetPlatform.
+  if (Platform.isLinux || Platform.isWindows) {
+    debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
+  }
+}
+
+// void main() {
+//   runApp(new MyApp());
+// }
 
 class MyApp extends StatelessWidget {
   @override
