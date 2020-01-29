@@ -1,16 +1,10 @@
 # my_business_card
 
-A new Flutter application.
+01/29/2020 -
 
-## Getting Started
+A working example of a flutter app that successfully builds to macos, ios, and android. The app can be copied to another folder and when switched to flutter beta will build for web.
 
-This project is a starting point for a Flutter application.
+## More Info
 
-A few resources to get you started if this is your first Flutter project:
+Additions with follow as I add various other scenes and plugins. Also see other repos and gists for more flutter examples.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
