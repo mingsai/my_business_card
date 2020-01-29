@@ -67,30 +67,30 @@ flutter:
   fonts:
     - family: 'Roboto'
       fonts:
-        - asset: google_fonts/Roboto/Roboto-Thin.ttf
+        - asset: google_fonts/Roboto-Thin.ttf
           weight: 100
-        - asset: google_fonts/Roboto/Roboto-Light.ttf
+        - asset: google_fonts/Roboto-Light.ttf
           weight: 300
-        - asset: google_fonts/Roboto/Roboto-Regular.ttf
+        - asset: google_fonts/Roboto-Regular.ttf
           weight: 400
-        - asset: google_fonts/Roboto/Roboto-Medium.ttf
+        - asset: google_fonts/Roboto-Medium.ttf
           weight: 500
-        - asset: google_fonts/Roboto/Roboto-Bold.ttf
+        - asset: google_fonts/Roboto-Bold.ttf
           weight: 700
-        - asset: google_fonts/Roboto/Roboto-Black.ttf 
+        - asset: google_fonts/Roboto-Black.ttf
     - family: ''
       fonts:
-        - asset: google_fonts/Roboto/Roboto-Thin.ttf
+        - asset: google_fonts/Roboto-Thin.ttf
           weight: 100
-        - asset: google_fonts/Roboto/Roboto-Light.ttf
+        - asset: google_fonts/Roboto-Light.ttf
           weight: 300
-        - asset: google_fonts/Roboto/Roboto-Regular.ttf
+        - asset: google_fonts/Roboto-Regular.ttf
           weight: 400
-        - asset: google_fonts/Roboto/Roboto-Medium.ttf
+        - asset: google_fonts/Roboto-Medium.ttf
           weight: 500
-        - asset: google_fonts/Roboto/Roboto-Bold.ttf
+        - asset: google_fonts/Roboto-Bold.ttf
           weight: 700
-        - asset: google_fonts/Roboto/Roboto-Black.ttf
+        - asset: google_fonts/Roboto-Black.ttf
 #   fonts:
 #     - family: SFProRounded
 #       fonts:
